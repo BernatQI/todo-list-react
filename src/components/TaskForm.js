@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { AiFillCodeSandboxSquare } from "react-icons/ai";
 import '../stylesheets/TaskForm.css';
 import { v4 as uuidv4 } from 'uuid';
 

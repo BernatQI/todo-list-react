@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TaskForm from "./TaskForm";
 import '../stylesheets/TodoList.css';
 import Task from "./Task";
@@ -14,7 +14,7 @@ function TodoList() {
       const tasksUpdated = [task, ...tasks];
       setTasks(tasksUpdated);
     }
-  }
+  };
 
   const deleteTask = id => {
     const tasksUpdated = tasks.filter(task => task.id !== id);
